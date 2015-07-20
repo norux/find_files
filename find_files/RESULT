@@ -1,0 +1,94 @@
+
+[EXPECT RESULT]
+
+subdirectory: test
+
+./test:
+1  2  3  d1  d2  d3
+
+./test/d1:
+1  2  3  4  dd1  dd2
+
+./test/d1/dd1:
+1  2  3  4  ddd1
+
+./test/d1/dd1/ddd1:
+1  2  3  4
+
+./test/d1/dd2:
+
+./test/d2:
+1  2  3  dd1
+
+./test/d2/dd1:
+1  2  ddd1  ddd2  ddd3  ddd4
+
+./test/d2/dd1/ddd1:
+1  2
+
+./test/d2/dd1/ddd2:
+1
+
+./test/d2/dd1/ddd3:
+1  2
+
+./test/d2/dd1/ddd4:
+
+./test/d3:
+1  2  3  4  dd1  dd2  dd3
+
+./test/d3/dd1:
+1  2  3
+
+./test/d3/dd2:
+1  2  3
+
+./test/d3/dd3:
+1  2  3  4  5
+
+
+[REAL RESULT]
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d2/dd1/ddd3/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d2/dd1/ddd3/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d2/dd1/ddd2/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d2/dd1/ddd1/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d2/dd1/ddd1/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d2/dd1/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d2/dd1/ddd4/
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d2/dd1/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d2/3
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d2/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d2/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/4
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/dd1/4
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/dd1/ddd1/4
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/dd1/ddd1/3
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/dd1/ddd1/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/dd1/ddd1/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/dd1/3
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/dd1/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/dd1/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/3
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d1/dd2/
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/3
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/4
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/dd3/4
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/dd3/3
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/dd3/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/dd3/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/dd3/5
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/dd1/3
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/dd1/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/dd1/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/3
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/dd2/3
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/dd2/2
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/d3/dd2/1
+/home/heebum/workspace/using_vi/01_find_all_subfiles/test/1
+
+
