@@ -11,8 +11,8 @@
 #include <errno.h>
 
 #include <sys/stat.h>
-#include <linux/types.h>
 
+#define PATH_MAX 4096
 
 typedef enum {false, true} bool;
 
