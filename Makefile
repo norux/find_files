@@ -5,7 +5,7 @@ SOURCES= main.c \
 		 dir.c \
 		 my_ftw.c
 
-OBJECTS=$(SOURCES:.cpp=.0)
+OBJECTS=$(SOURCES:.c=.o)
 EXECUTABLE= find_files
 
 all: $(SOURCES) $(EXECUTABLE)
@@ -13,7 +13,7 @@ all: $(SOURCES) $(EXECUTABLE)
 $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
-.cpp.o:
+.c.o:
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
